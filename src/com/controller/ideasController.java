@@ -69,7 +69,7 @@ public class ideasController {
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public ModelAndView addTestCycle(@ModelAttribute(value="testcycle11") TestCycle testcycle11, BindingResult result) 
 	{
-		System.out.println("TestCycle:  " +testcycle11.getCycleName());
+		System.out.println("TestCycle:-  " +testcycle11.getCycleName());
 		boolean saved=testcycleservice.addTestCycle(testcycle11);
 		System.out.println("Data in Service class :" + testcycle11.getCycleName());
 		ModelAndView mav = new ModelAndView("TestCycleForm");
